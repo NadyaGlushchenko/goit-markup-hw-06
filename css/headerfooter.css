@@ -215,7 +215,6 @@ img {
 }
 
 .button {
-  display: inline-flex;
   color: var(--text-color);
   background: var(--background-color);
   font-weight: 900;
@@ -234,13 +233,15 @@ img {
   margin-left: 12px;
 }
 
-.icon-button {
+.button > .icon-button {
+  display: inline-flex;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 
   background-image: url(../images/plain.svg);
   background-size: contain;
+  background-position: center;
 }
 
 .text {
