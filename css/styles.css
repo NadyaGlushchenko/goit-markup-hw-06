@@ -50,6 +50,7 @@
 /* Стили героя */
 
 .hero {
+  position: relative;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -76,6 +77,144 @@
 
   margin: 0px;
 }
+
+.form-order {
+  position: absolute;
+  display: inline-block;
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  background-color: var(--text-color);
+  transform: translate(-30%, -50%);
+}
+
+.form-window {
+  position: relative;
+  margin: 0px;
+}
+
+.name-order {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0px;
+  padding: 0px;
+}
+
+.label-order {
+  position: absolute;
+  top: 70%;
+  left: 42px;
+  margin: 0px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.input-order:focus + .label-order,
+.input-order:not(:placeholder-shown) + .label-order {
+  color: var(--background-color);
+  transform: translateY(-200%);
+}
+
+.icon-form {
+  position: absolute;
+  top: 40px;
+  left: 19px;
+
+  width: 15px;
+  height: 15px;
+}
+
+.input-order {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 42px;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+.input-order:hover,
+.input-order:focus {
+  border: 1px solid var(--background-color);
+}
+
+.input-order:focus ~ .icon-form {
+  fill: var(--background-color);
+  transition: fill 250ms linear;
+}
+
+.write {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  color: #212121;
+}
+
+.yes {
+  margin: 0px;
+}
+
+.write a {
+  color: var(--background-color);
+}
+
+textarea {
+  resize: none;
+}
+
+.comment {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 120px;
+  border-radius: 4px;
+  margin: 0px;
+  margin-top: 30px;
+}
+.comment:hover,
+.comment:focus {
+  border: 1px solid var(--background-color);
+}
+
+.form-button {
+  background: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border: 0px;
+}
+
+.form-button:hover,
+.form-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .link-hero {
   background: var(--background-color);
   color: var(--text-color);
@@ -94,6 +233,14 @@
   padding: 10px 32px;
   margin-top: 46px;
   border: 0px;
+}
+
+.link-hero:hover,
+.link-hero:focus {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* cтили секций */
 

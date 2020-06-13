@@ -64,7 +64,58 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="link-hero">Заказать услугу</button>
+
+        <form class="form-order">
+          <p class="name-order">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-window">
+            <input
+              type="text"
+              name="name"
+              class="input-order"
+              placeholder=" "
+            />
+
+            <label for="name" class="label-order">Имя</label>
+            <svg class="icon-form">
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </div>
+          <div class="form-window">
+            <input type="tel" name="tel" class="input-order" placeholder=" " />
+
+            <label for="tel" class="label-order">Телефон</label>
+            <svg class="icon-form">
+              <use href="./images/symbol-defs.svg#icon-tel"></use>
+            </svg>
+          </div>
+          <div class="form-window">
+            <input
+              type="email"
+              name="tel"
+              class="input-order"
+              placeholder=" "
+            />
+            <label for="email" class="label-order">Почта</label>
+            <svg class="icon-form">
+              <use href="./images/symbol-defs.svg#icon-meil"></use>
+            </svg>
+          </div>
+          <div class="form-window">
+            <textarea
+              name="comment"
+              id=""
+              class="comment"
+              placeholder="Комментарий"
+            ></textarea>
+          </div>
+          <div class="write">
+            <input type="checkbox" name="check" />
+            <p class="yes">Соглашаюсь с рассылкой и принимаю</p>
+            <a href="">Условия договора</a>
+          </div>
+          <button type="submit" class="form-button">Отправить</button>
+        </form>
+        <button type="submit" class="link-hero">Заказать услугу</button>
       </section>
       <!-- Наши приоритеты -->
       <section class="section">
@@ -408,16 +459,20 @@
         <div class="item-input">
           <b class="join">подпишитесь на рассылку</b>
           <div class="inputbutton">
-            <label>
+            <form>
               <input
                 type="email"
+                name=""
                 placeholder="E-mail"
                 size="40"
                 class="input"
               />
-            </label>
+            </form>
             <button type="submit" class="button">
-              Подписаться<span class="icon-button"></span>
+              Подписаться<span
+                ><svg class="icon-button">
+                  <use href="./images/symbol-defs.svg#icon-plain"></use></svg
+              ></span>
             </button>
           </div>
         </div>
