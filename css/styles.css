@@ -145,7 +145,7 @@
 .input-order:focus + .label-order,
 .input-order:not(:placeholder-shown) + .label-order {
   color: var(--background-color);
-  transform: translateY(-200%);
+  transform: translate(-55%, -200%);
   outline: none;
 }
 
@@ -250,6 +250,7 @@ textarea {
   border-radius: 4px;
   margin: 0px;
   margin-top: 30px;
+  padding: 12px 16px;
 }
 .comment:hover,
 .comment:focus {
@@ -257,8 +258,16 @@ textarea {
 }
 
 .comment-text {
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 40px;
+  left: 16px;
+}
+
+.comment:focus + .comment-text,
+.comment:focus:not(:placeholder-shown) + .comment-text {
+  color: var(--background-color);
+  transform: translate(-15%, -150%);
+  outline: none;
 }
 
 .form-button {
