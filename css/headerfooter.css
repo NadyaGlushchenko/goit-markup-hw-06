@@ -232,6 +232,7 @@ img {
   margin-top: 21px;
   margin-bottom: 50px;
   margin-left: 12px;
+  outline: none;
 }
 .button:hover,
 .button:focus {
@@ -239,6 +240,7 @@ img {
   color: var(--background-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .icon-button {
