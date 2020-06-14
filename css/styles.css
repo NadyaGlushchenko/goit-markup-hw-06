@@ -79,8 +79,10 @@
 }
 
 .backdrop {
+  display: inline-block;
   position: fixed;
   top: 0;
+  margin: auto;
   width: 1600px;
   height: 1024px;
   opacity: 1;
@@ -91,11 +93,11 @@
   justify-content: center;
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-} */
+}
 
 .form-order {
   position: absolute;
@@ -185,13 +187,13 @@
   display: inline-block;
 }
 
-/* .checkbox {
- -webkit-appearance: none;
+.checkbox {
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; 
+  appearance: none;
 
-   position: absolute; 
-} */
+  position: absolute;
+}
 
 .icon-check {
   display: inline-block;
@@ -254,18 +256,22 @@ textarea {
   border: 1px solid var(--background-color);
 }
 
+.comment-text {
+  top: 0;
+  left: 0;
+}
+
 .form-button {
+  display: inline-block;
   background: var(--background-color);
   color: var(--text-color);
-  text-decoration: none;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   text-align: center;
 
-  display: inline-block;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
